@@ -29,12 +29,12 @@ RUN curl -s https://getcomposer.org/installer | php
 RUN mv composer.phar /usr/local/bin/composer
 
 
-RUN wget https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-1.9.8-linux-x86_64.tar.bz2
-RUN tar xvjf phantomjs-1.9.8-linux-x86_64.tar.bz2
-
-RUN mv phantomjs-1.9.8-linux-x86_64 /usr/local/share
-RUN ln -sf /usr/local/share/phantomjs-1.9.8-linux-x86_64/bin/phantomjs /usr/local/bin
-
-WORKDIR /home/behat
-CMD ["php-fpm"]
+#RUN wget https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-1.9.8-linux-x86_64.tar.bz2
+#RUN tar xvjf phantomjs-1.9.8-linux-x86_64.tar.bz2
+#
+#RUN mv phantomjs-1.9.8-linux-x86_64 /usr/local/share
+#RUN ln -sf /usr/local/share/phantomjs-1.9.8-linux-x86_64/bin/phantomjs /usr/local/bin
+#
+#WORKDIR /home/behat
+#CMD ["php-fpm"]
 
