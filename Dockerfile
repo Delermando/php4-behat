@@ -5,18 +5,18 @@ RUN apt-get update && apt-get install -y \
     git\
     zlib1g-dev \
     php-pear \
-    libfreetype6-dev \
-    libjpeg62-turbo-dev \
-    libmcrypt-dev \
-    libpng12-dev \
-    build-essential \
-    chrpath \
-    libssl-dev\
-    libxft-dev\
-    libfreetype6 \
-    libfreetype6-dev\
-    libfontconfig1 \
-    libfontconfig1-dev\
+    #libfreetype6-dev \
+    #libjpeg62-turbo-dev \
+    #libmcrypt-dev \
+    #libpng12-dev \
+    #build-essential \
+    #chrpath \
+    #libssl-dev\
+    #libxft-dev\
+    #libfreetype6 \
+    #libfreetype6-dev\
+    #libfontconfig1 \
+    #libfontconfig1-dev\
     && docker-php-ext-install iconv mcrypt \
     && docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/include/ \
     && docker-php-ext-install gd \
