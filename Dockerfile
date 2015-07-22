@@ -3,7 +3,7 @@ FROM php:5.4-apache
 RUN apt-get update && apt-get install -y \
     wget\
     git\
-   zlib1g-dev \
+    zlib1g-dev \
     php-pear \
 
     #libfreetype6-dev \
@@ -25,8 +25,8 @@ RUN apt-get update && apt-get install -y \
     #&& docker-php-ext-install mbstring\
     #&& docker-php-ext-install zip
 
-#RUN curl -s https://getcomposer.org/installer | php
-#RUN mv composer.phar /usr/local/bin/composer
+RUN curl -s https://getcomposer.org/installer | php
+RUN mv composer.phar /usr/local/bin/composer
 
 
 #RUN wget https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-1.9.8-linux-x86_64.tar.bz2
