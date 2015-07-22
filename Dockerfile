@@ -37,5 +37,5 @@ RUN mv phantomjs-1.9.8-linux-x86_64 /usr/local/share
 RUN ln -sf /usr/local/share/phantomjs-1.9.8-linux-x86_64/bin/phantomjs /usr/local/bin
 
 WORKDIR /home/behat
-#CMD ["php-fpm"]
+
 
