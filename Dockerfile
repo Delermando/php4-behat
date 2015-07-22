@@ -13,11 +13,11 @@ RUN apt-get update && apt-get install -y \
     build-essential \
     chrpath \
 
-    #libssl-dev\
-    #libxft-dev\
-    #libfreetype6 \
-    #libfreetype6-dev\
-    #libfontconfig1 \
+   libssl-dev\
+   libxft-dev\
+   libfreetype6 \
+   libfreetype6-dev\
+   libfontconfig1 \
 
     #libfontconfig1-dev\
     #&& docker-php-ext-install iconv mcrypt \
