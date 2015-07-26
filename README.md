@@ -1,1 +1,1 @@
-# php5.4-behat3
+Esta é uma imagem do PHP 5.4 que onde vem instalado o apache, composer, git e phantomjs. Neste repositorio vem um arquivo jar do selenium, e um arquivo composer.json com as dependecias de instalacao do behat. O makefile neste repositorio o auxiliará para rodar comandos basicos para trabalhar com teste container ao levantar o container com o comando "make up", acesse o mesmo com o "make connectBehat", agora dentro da imagem rode o comando "composer install", ao finalizar este commando voce terá um ambiente propicio rodar os teste de integracão com behat.
