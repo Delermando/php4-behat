@@ -1,5 +1,5 @@
 up:
-	docker run -d -i -t  --name="behat"  -v `pwd`:/home/behat   --link nef:nef php4-behat /bin/bash;
+	docker run -d -it  --name="behat"  -v `pwd`:/home/behat  delermando/php5.4-behat3 /bin/bash;
 
 down:
 	docker rm  behat;
